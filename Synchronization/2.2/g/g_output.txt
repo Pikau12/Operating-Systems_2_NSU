@@ -1,0 +1,531 @@
+=== STARTING AUTOMATED TEST RUNS ===
+
+------------------------------------------------
+ TEST CONFIG:
+   QUEUE_SIZE      = 1000
+   READER_CPU      = 0
+   WRITER_CPU      = 1
+   USE_SCHED_YIELD = 0
+   TIME_LIMIT      = 15s
+
+main [42765 42764 42765]
+config: queue_size=1000, reader_cpu=0, writer_cpu=1, use_sched_yield=0
+qmonitor: [42765 42764 42766]
+queue stats: current size 0; attempts: (0 0 0); counts (0 0 0)
+reader [42765 42764 42767]
+writer [42765 42764 42768]
+set_cpu: set cpu 0
+set_cpu: set cpu 1
+queue stats: current size 991; attempts: (1998376 1997385 991); counts (1998376 1997385 991)
+queue stats: current size 992; attempts: (4407338 4406346 992); counts (4407338 4406346 992)
+queue stats: current size 999; attempts: (6698451 6697452 999); counts (6698451 6697452 999)
+queue stats: current size 991; attempts: (8909542 8908551 991); counts (8909542 8908551 991)
+queue stats: current size 993; attempts: (11371814 11370821 993); counts (11371814 11370821 993)
+queue stats: current size 993; attempts: (13381934 13380941 993); counts (13381934 13380941 993)
+queue stats: current size 987; attempts: (15361610 15360623 987); counts (15361610 15360623 987)
+queue stats: current size 988; attempts: (17828282 17827294 988); counts (17828282 17827294 988)
+queue stats: current size 999; attempts: (20140064 20139065 999); counts (20140064 20139065 999)
+queue stats: current size 1000; attempts: (22338807 22337807 1000); counts (22338807 22337807 1000)
+queue stats: current size 980; attempts: (24772130 24771150 980); counts (24772130 24771150 980)
+queue stats: current size 988; attempts: (27007340 27006352 988); counts (27007340 27006352 988)
+queue stats: current size 991; attempts: (29032464 29031473 991); counts (29032464 29031473 991)
+queue stats: current size 999; attempts: (31465205 31464206 999); counts (31465205 31464206 999)
+>>> TIMEOUT: program was terminated after 15s
+------------------------------------------------
+
+------------------------------------------------
+ TEST CONFIG:
+   QUEUE_SIZE      = 1000
+   READER_CPU      = 0
+   WRITER_CPU      = 1
+   USE_SCHED_YIELD = 1
+   TIME_LIMIT      = 15s
+
+main [42867 42866 42867]
+config: queue_size=1000, reader_cpu=0, writer_cpu=1, use_sched_yield=1
+qmonitor: [42867 42866 42868]
+queue stats: current size 0; attempts: (0 0 0); counts (0 0 0)
+writer [42867 42866 42870]
+reader [42867 42866 42869]
+set_cpu: set cpu 0
+set_cpu: set cpu 1
+queue stats: current size 976; attempts: (1931214 1930238 976); counts (1931214 1930238 976)
+queue stats: current size 984; attempts: (3936338 3935354 984); counts (3936338 3935354 984)
+queue stats: current size 996; attempts: (6089841 6088845 996); counts (6089841 6088845 996)
+queue stats: current size 992; attempts: (8381410 8380418 992); counts (8381410 8380418 992)
+queue stats: current size 982; attempts: (10252337 10251355 982); counts (10252337 10251355 982)
+queue stats: current size 997; attempts: (12134031 12133034 997); counts (12134031 12133034 997)
+queue stats: current size 891; attempts: (13750250 13749359 891); counts (13750250 13749359 891)
+queue stats: current size 979; attempts: (16219399 16218420 979); counts (16219399 16218420 979)
+queue stats: current size 988; attempts: (18930770 18929782 988); counts (18930770 18929782 988)
+queue stats: current size 1000; attempts: (21596682 21595682 1000); counts (21596682 21595682 1000)
+queue stats: current size 990; attempts: (23754393 23753403 990); counts (23754393 23753403 990)
+queue stats: current size 992; attempts: (26403638 26402646 992); counts (26403638 26402646 992)
+queue stats: current size 996; attempts: (29080733 29079737 996); counts (29080733 29079737 996)
+queue stats: current size 955; attempts: (31411382 31410427 955); counts (31411382 31410427 955)
+>>> TIMEOUT: program was terminated after 15s
+------------------------------------------------
+
+------------------------------------------------
+ TEST CONFIG:
+   QUEUE_SIZE      = 1000
+   READER_CPU      = 1
+   WRITER_CPU      = 0
+   USE_SCHED_YIELD = 0
+   TIME_LIMIT      = 15s
+
+main [42986 42985 42986]
+config: queue_size=1000, reader_cpu=1, writer_cpu=0, use_sched_yield=0
+qmonitor: [42986 42985 42987]
+queue stats: current size 0; attempts: (0 0 0); counts (0 0 0)
+reader [42986 42985 42988]
+writer [42986 42985 42989]
+set_cpu: set cpu 1
+set_cpu: set cpu 0
+queue stats: current size 996; attempts: (2618894 2617898 996); counts (2618894 2617898 996)
+queue stats: current size 999; attempts: (5262025 5261026 999); counts (5262025 5261026 999)
+queue stats: current size 999; attempts: (7851228 7850229 999); counts (7851228 7850229 999)
+queue stats: current size 987; attempts: (10497400 10496413 987); counts (10497400 10496413 987)
+queue stats: current size 987; attempts: (13133411 13132424 987); counts (13133411 13132424 987)
+queue stats: current size 984; attempts: (15801280 15800296 984); counts (15801280 15800296 984)
+queue stats: current size 997; attempts: (18415514 18414517 997); counts (18415514 18414517 997)
+queue stats: current size 980; attempts: (21082350 21081370 980); counts (21082350 21081370 980)
+queue stats: current size 986; attempts: (23682986 23682000 986); counts (23682986 23682000 986)
+queue stats: current size 998; attempts: (26305332 26304334 998); counts (26305332 26304334 998)
+queue stats: current size 992; attempts: (28897654 28896662 992); counts (28897654 28896662 992)
+queue stats: current size 987; attempts: (31531444 31530457 987); counts (31531444 31530457 987)
+queue stats: current size 999; attempts: (34154324 34153325 999); counts (34154324 34153325 999)
+queue stats: current size 991; attempts: (36791649 36790658 991); counts (36791649 36790658 991)
+>>> TIMEOUT: program was terminated after 15s
+------------------------------------------------
+
+------------------------------------------------
+ TEST CONFIG:
+   QUEUE_SIZE      = 1000
+   READER_CPU      = 1
+   WRITER_CPU      = 0
+   USE_SCHED_YIELD = 1
+   TIME_LIMIT      = 15s
+
+main [43087 43086 43087]
+config: queue_size=1000, reader_cpu=1, writer_cpu=0, use_sched_yield=1
+qmonitor: [43087 43086 43088]
+queue stats: current size 0; attempts: (0 0 0); counts (0 0 0)
+writer [43087 43086 43090]
+reader [43087 43086 43089]
+set_cpu: set cpu 0
+set_cpu: set cpu 1
+queue stats: current size 986; attempts: (1976363 1975377 986); counts (1976363 1975377 986)
+queue stats: current size 999; attempts: (3848247 3847248 999); counts (3848247 3847248 999)
+queue stats: current size 989; attempts: (6009913 6008924 989); counts (6009913 6008924 989)
+queue stats: current size 990; attempts: (8491875 8490885 990); counts (8491875 8490885 990)
+queue stats: current size 991; attempts: (10933012 10932021 991); counts (10933012 10932021 991)
+queue stats: current size 786; attempts: (13411952 13411166 786); counts (13411952 13411166 786)
+queue stats: current size 996; attempts: (15848331 15847335 996); counts (15848331 15847335 996)
+queue stats: current size 990; attempts: (18364569 18363579 990); counts (18364569 18363579 990)
+queue stats: current size 984; attempts: (20848674 20847690 984); counts (20848674 20847690 984)
+queue stats: current size 997; attempts: (23381399 23380402 997); counts (23381399 23380402 997)
+queue stats: current size 991; attempts: (25844078 25843087 991); counts (25844078 25843087 991)
+queue stats: current size 983; attempts: (28215753 28214770 983); counts (28215753 28214770 983)
+queue stats: current size 993; attempts: (30736662 30735669 993); counts (30736662 30735669 993)
+queue stats: current size 975; attempts: (33276876 33275901 975); counts (33276876 33275901 975)
+>>> TIMEOUT: program was terminated after 15s
+------------------------------------------------
+
+------------------------------------------------
+ TEST CONFIG:
+   QUEUE_SIZE      = 100000
+   READER_CPU      = 0
+   WRITER_CPU      = 1
+   USE_SCHED_YIELD = 0
+   TIME_LIMIT      = 15s
+
+main [43215 43214 43215]
+config: queue_size=100000, reader_cpu=0, writer_cpu=1, use_sched_yield=0
+qmonitor: [43215 43214 43216]
+queue stats: current size 0; attempts: (0 0 0); counts (0 0 0)
+reader [43215 43214 43217]
+writer [43215 43214 43218]
+set_cpu: set cpu 1
+set_cpu: set cpu 0
+queue stats: current size 99964; attempts: (2331837 2231873 99964); counts (2331837 2231873 99964)
+queue stats: current size 99983; attempts: (4734817 4634834 99983); counts (4734817 4634834 99983)
+queue stats: current size 99990; attempts: (7052213 6952223 99990); counts (7052213 6952223 99990)
+queue stats: current size 99993; attempts: (9400040 9300047 99993); counts (9400040 9300047 99993)
+queue stats: current size 99985; attempts: (11874631 11774646 99985); counts (11874631 11774646 99985)
+queue stats: current size 99972; attempts: (13965423 13865451 99972); counts (13965423 13865451 99972)
+queue stats: current size 99986; attempts: (15679102 15579116 99986); counts (15679102 15579116 99986)
+queue stats: current size 99992; attempts: (18227014 18127022 99992); counts (18227014 18127022 99992)
+queue stats: current size 100000; attempts: (20776136 20676136 100000); counts (20776136 20676136 100000)
+queue stats: current size 99994; attempts: (23288510 23188516 99994); counts (23288510 23188516 99994)
+queue stats: current size 99999; attempts: (25644626 25544627 99999); counts (25644626 25544627 99999)
+queue stats: current size 99994; attempts: (27946353 27846359 99994); counts (27946353 27846359 99994)
+queue stats: current size 99995; attempts: (30154102 30054107 99995); counts (30154102 30054107 99995)
+queue stats: current size 99989; attempts: (32566179 32466190 99989); counts (32566179 32466190 99989)
+>>> TIMEOUT: program was terminated after 15s
+------------------------------------------------
+
+------------------------------------------------
+ TEST CONFIG:
+   QUEUE_SIZE      = 100000
+   READER_CPU      = 0
+   WRITER_CPU      = 1
+   USE_SCHED_YIELD = 1
+   TIME_LIMIT      = 15s
+
+main [43328 43327 43328]
+config: queue_size=100000, reader_cpu=0, writer_cpu=1, use_sched_yield=1
+qmonitor: [43328 43327 43329]
+queue stats: current size 0; attempts: (0 0 0); counts (0 0 0)
+reader [43328 43327 43330]
+writer [43328 43327 43331]
+set_cpu: set cpu 0
+set_cpu: set cpu 1
+queue stats: current size 99996; attempts: (2541258 2441262 99996); counts (2541258 2441262 99996)
+queue stats: current size 99999; attempts: (5079011 4979012 99999); counts (5079011 4979012 99999)
+queue stats: current size 99988; attempts: (7623940 7523952 99988); counts (7623940 7523952 99988)
+queue stats: current size 99996; attempts: (10223223 10123227 99996); counts (10223223 10123227 99996)
+queue stats: current size 99989; attempts: (12777048 12677059 99989); counts (12777048 12677059 99989)
+queue stats: current size 99976; attempts: (15292145 15192169 99976); counts (15292145 15192169 99976)
+queue stats: current size 99991; attempts: (17800868 17700877 99991); counts (17800868 17700877 99991)
+queue stats: current size 100000; attempts: (20313037 20213037 100000); counts (20313037 20213037 100000)
+queue stats: current size 99999; attempts: (22851674 22751675 99999); counts (22851674 22751675 99999)
+queue stats: current size 99978; attempts: (25309413 25209435 99978); counts (25309413 25209435 99978)
+queue stats: current size 99999; attempts: (27783670 27683671 99999); counts (27783670 27683671 99999)
+queue stats: current size 99988; attempts: (30275645 30175657 99988); counts (30275645 30175657 99988)
+queue stats: current size 99990; attempts: (32717304 32617314 99990); counts (32717304 32617314 99990)
+queue stats: current size 99991; attempts: (35186974 35086983 99991); counts (35186974 35086983 99991)
+>>> TIMEOUT: program was terminated after 15s
+------------------------------------------------
+
+------------------------------------------------
+ TEST CONFIG:
+   QUEUE_SIZE      = 100000
+   READER_CPU      = 1
+   WRITER_CPU      = 0
+   USE_SCHED_YIELD = 0
+   TIME_LIMIT      = 15s
+
+main [43431 43430 43431]
+config: queue_size=100000, reader_cpu=1, writer_cpu=0, use_sched_yield=0
+qmonitor: [43431 43430 43432]
+queue stats: current size 0; attempts: (0 0 0); counts (0 0 0)
+reader [43431 43430 43433]
+writer [43431 43430 43434]
+set_cpu: set cpu 1
+set_cpu: set cpu 0
+queue stats: current size 99983; attempts: (2555752 2455769 99983); counts (2555752 2455769 99983)
+queue stats: current size 99998; attempts: (4850258 4750260 99998); counts (4850258 4750260 99998)
+queue stats: current size 99998; attempts: (7401605 7301607 99998); counts (7401605 7301607 99998)
+queue stats: current size 99993; attempts: (9848107 9748114 99993); counts (9848107 9748114 99993)
+queue stats: current size 99975; attempts: (12332760 12232785 99975); counts (12332760 12232785 99975)
+queue stats: current size 99987; attempts: (14568085 14468098 99987); counts (14568085 14468098 99987)
+queue stats: current size 99993; attempts: (16901380 16801387 99993); counts (16901380 16801387 99993)
+queue stats: current size 99952; attempts: (19283097 19183145 99952); counts (19283097 19183145 99952)
+queue stats: current size 99991; attempts: (21718306 21618315 99991); counts (21718306 21618315 99991)
+queue stats: current size 99992; attempts: (24153547 24053555 99992); counts (24153547 24053555 99992)
+queue stats: current size 99978; attempts: (26185647 26085669 99978); counts (26185647 26085669 99978)
+queue stats: current size 99985; attempts: (28112580 28012595 99985); counts (28112580 28012595 99985)
+queue stats: current size 99993; attempts: (29737180 29637187 99993); counts (29737180 29637187 99993)
+queue stats: current size 99992; attempts: (31257153 31157161 99992); counts (31257153 31157161 99992)
+>>> TIMEOUT: program was terminated after 15s
+------------------------------------------------
+
+------------------------------------------------
+ TEST CONFIG:
+   QUEUE_SIZE      = 100000
+   READER_CPU      = 1
+   WRITER_CPU      = 0
+   USE_SCHED_YIELD = 1
+   TIME_LIMIT      = 15s
+
+main [43573 43572 43573]
+config: queue_size=100000, reader_cpu=1, writer_cpu=0, use_sched_yield=1
+reader [43573 43572 43575]
+writer [43573 43572 43576]
+set_cpu: set cpu 1
+set_cpu: set cpu 0
+qmonitor: [43573 43572 43574]
+queue stats: current size 6; attempts: (76 70 6); counts (76 70 6)
+queue stats: current size 99999; attempts: (2072173 1972174 99999); counts (2072173 1972174 99999)
+queue stats: current size 99990; attempts: (4198345 4098355 99990); counts (4198345 4098355 99990)
+queue stats: current size 99999; attempts: (5850018 5750019 99999); counts (5850018 5750019 99999)
+queue stats: current size 99958; attempts: (7565556 7465598 99958); counts (7565556 7465598 99958)
+queue stats: current size 99984; attempts: (9507931 9407947 99984); counts (9507931 9407947 99984)
+queue stats: current size 99995; attempts: (11251538 11151543 99995); counts (11251538 11151543 99995)
+queue stats: current size 99978; attempts: (13154372 13054394 99978); counts (13154372 13054394 99978)
+queue stats: current size 100000; attempts: (14903880 14803880 100000); counts (14903880 14803880 100000)
+queue stats: current size 99992; attempts: (16453664 16353672 99992); counts (16453664 16353672 99992)
+queue stats: current size 99990; attempts: (18223619 18123629 99990); counts (18223619 18123629 99990)
+queue stats: current size 99995; attempts: (20198677 20098682 99995); counts (20198677 20098682 99995)
+queue stats: current size 99993; attempts: (21884338 21784345 99993); counts (21884338 21784345 99993)
+queue stats: current size 99997; attempts: (23552714 23452717 99997); counts (23552714 23452717 99997)
+queue stats: current size 99999; attempts: (25261892 25161893 99999); counts (25261892 25161893 99999)
+>>> TIMEOUT: program was terminated after 15s
+------------------------------------------------
+
+------------------------------------------------
+ TEST CONFIG:
+   QUEUE_SIZE      = 1000000
+   READER_CPU      = 0
+   WRITER_CPU      = 1
+   USE_SCHED_YIELD = 0
+   TIME_LIMIT      = 15s
+
+main [43689 43688 43689]
+config: queue_size=1000000, reader_cpu=0, writer_cpu=1, use_sched_yield=0
+qmonitor: [43689 43688 43690]
+queue stats: current size 0; attempts: (0 0 0); counts (0 0 0)
+reader [43689 43688 43691]
+writer [43689 43688 43692]
+set_cpu: set cpu 0
+set_cpu: set cpu 1
+queue stats: current size 999980; attempts: (2100582 1100602 999980); counts (2100582 1100602 999980)
+queue stats: current size 999997; attempts: (3690112 2690115 999997); counts (3690112 2690115 999997)
+queue stats: current size 999990; attempts: (5456835 4456845 999990); counts (5456835 4456845 999990)
+queue stats: current size 999999; attempts: (7481294 6481295 999999); counts (7481294 6481295 999999)
+queue stats: current size 999988; attempts: (9075255 8075267 999988); counts (9075255 8075267 999988)
+queue stats: current size 999991; attempts: (10719126 9719135 999991); counts (10719126 9719135 999991)
+queue stats: current size 999988; attempts: (12372052 11372064 999988); counts (12372052 11372064 999988)
+queue stats: current size 999992; attempts: (13905119 12905127 999992); counts (13905119 12905127 999992)
+queue stats: current size 999980; attempts: (15599719 14599739 999980); counts (15599719 14599739 999980)
+queue stats: current size 999994; attempts: (17336834 16336840 999994); counts (17336834 16336840 999994)
+queue stats: current size 999989; attempts: (19306326 18306337 999989); counts (19306326 18306337 999989)
+queue stats: current size 999984; attempts: (21094246 20094262 999984); counts (21094246 20094262 999984)
+queue stats: current size 999990; attempts: (22957705 21957715 999990); counts (22957705 21957715 999990)
+queue stats: current size 999997; attempts: (24742913 23742916 999997); counts (24742913 23742916 999997)
+>>> TIMEOUT: program was terminated after 15s
+------------------------------------------------
+
+------------------------------------------------
+ TEST CONFIG:
+   QUEUE_SIZE      = 1000000
+   READER_CPU      = 0
+   WRITER_CPU      = 1
+   USE_SCHED_YIELD = 1
+   TIME_LIMIT      = 15s
+
+main [43853 43852 43853]
+config: queue_size=1000000, reader_cpu=0, writer_cpu=1, use_sched_yield=1
+qmonitor: [43853 43852 43854]
+queue stats: current size 0; attempts: (0 0 0); counts (0 0 0)
+reader [43853 43852 43855]
+set_cpu: set cpu 0
+writer [43853 43852 43856]
+set_cpu: set cpu 1
+queue stats: current size 984944; attempts: (2021478 1036534 984944); counts (2021478 1036534 984944)
+queue stats: current size 999992; attempts: (3696525 2696533 999992); counts (3696525 2696533 999992)
+queue stats: current size 999993; attempts: (5570437 4570444 999993); counts (5570437 4570444 999993)
+queue stats: current size 1000000; attempts: (7593774 6593774 1000000); counts (7593774 6593774 1000000)
+queue stats: current size 999994; attempts: (9628870 8628876 999994); counts (9628870 8628876 999994)
+queue stats: current size 999985; attempts: (11778568 10778583 999985); counts (11778568 10778583 999985)
+queue stats: current size 999999; attempts: (13825309 12825310 999999); counts (13825309 12825310 999999)
+queue stats: current size 999991; attempts: (15906250 14906259 999991); counts (15906250 14906259 999991)
+queue stats: current size 999986; attempts: (18019361 17019375 999986); counts (18019361 17019375 999986)
+queue stats: current size 999996; attempts: (20160658 19160662 999996); counts (20160658 19160662 999996)
+queue stats: current size 999999; attempts: (22169551 21169552 999999); counts (22169551 21169552 999999)
+queue stats: current size 999988; attempts: (24479764 23479776 999988); counts (24479764 23479776 999988)
+queue stats: current size 999978; attempts: (26741891 25741913 999978); counts (26741891 25741913 999978)
+queue stats: current size 999993; attempts: (29097945 28097952 999993); counts (29097945 28097952 999993)
+>>> TIMEOUT: program was terminated after 15s
+------------------------------------------------
+
+------------------------------------------------
+ TEST CONFIG:
+   QUEUE_SIZE      = 1000000
+   READER_CPU      = 1
+   WRITER_CPU      = 0
+   USE_SCHED_YIELD = 0
+   TIME_LIMIT      = 15s
+
+main [43948 43947 43948]
+config: queue_size=1000000, reader_cpu=1, writer_cpu=0, use_sched_yield=0
+qmonitor: [43948 43947 43949]
+queue stats: current size 0; attempts: (0 0 0); counts (0 0 0)
+reader [43948 43947 43950]
+writer [43948 43947 43951]
+set_cpu: set cpu 1
+set_cpu: set cpu 0
+queue stats: current size 999991; attempts: (2350299 1350308 999991); counts (2350299 1350308 999991)
+queue stats: current size 999905; attempts: (4706464 3706559 999905); counts (4706464 3706559 999905)
+queue stats: current size 999987; attempts: (6916574 5916587 999987); counts (6916574 5916587 999987)
+queue stats: current size 999996; attempts: (9392216 8392220 999996); counts (9392216 8392220 999996)
+queue stats: current size 999982; attempts: (11841660 10841678 999982); counts (11841660 10841678 999982)
+queue stats: current size 999993; attempts: (14314092 13314099 999993); counts (14314092 13314099 999993)
+queue stats: current size 999989; attempts: (16691906 15691917 999989); counts (16691906 15691917 999989)
+queue stats: current size 999987; attempts: (19153532 18153545 999987); counts (19153532 18153545 999987)
+queue stats: current size 999981; attempts: (21207145 20207164 999981); counts (21207145 20207164 999981)
+queue stats: current size 999995; attempts: (23578854 22578859 999995); counts (23578854 22578859 999995)
+queue stats: current size 999973; attempts: (25878049 24878076 999973); counts (25878049 24878076 999973)
+queue stats: current size 999999; attempts: (28226362 27226363 999999); counts (28226362 27226363 999999)
+queue stats: current size 999986; attempts: (30104466 29104480 999986); counts (30104466 29104480 999986)
+queue stats: current size 999956; attempts: (32187144 31187188 999956); counts (32187144 31187188 999956)
+>>> TIMEOUT: program was terminated after 15s
+------------------------------------------------
+
+------------------------------------------------
+ TEST CONFIG:
+   QUEUE_SIZE      = 1000000
+   READER_CPU      = 1
+   WRITER_CPU      = 0
+   USE_SCHED_YIELD = 1
+   TIME_LIMIT      = 15s
+
+main [44063 44062 44063]
+config: queue_size=1000000, reader_cpu=1, writer_cpu=0, use_sched_yield=1
+reader [44063 44062 44065]
+qmonitor: [44063 44062 44064]
+queue stats: current size 0; attempts: (0 0 0); counts (0 0 0)
+writer [44063 44062 44066]
+set_cpu: set cpu 1
+set_cpu: set cpu 0
+queue stats: current size 999991; attempts: (2119530 1119539 999991); counts (2119530 1119539 999991)
+queue stats: current size 999984; attempts: (4259399 3259415 999984); counts (4259399 3259415 999984)
+queue stats: current size 999989; attempts: (6410797 5410808 999989); counts (6410797 5410808 999989)
+queue stats: current size 999996; attempts: (8581399 7581403 999996); counts (8581399 7581403 999996)
+queue stats: current size 999989; attempts: (10904153 9904164 999989); counts (10904153 9904164 999989)
+queue stats: current size 999978; attempts: (12697164 11697186 999978); counts (12697164 11697186 999978)
+queue stats: current size 999990; attempts: (14508210 13508220 999990); counts (14508210 13508220 999990)
+queue stats: current size 999985; attempts: (16732816 15732831 999985); counts (16732816 15732831 999985)
+queue stats: current size 999992; attempts: (18658188 17658196 999992); counts (18658188 17658196 999992)
+queue stats: current size 999999; attempts: (20416533 19416534 999999); counts (20416533 19416534 999999)
+queue stats: current size 999990; attempts: (22325014 21325024 999990); counts (22325014 21325024 999990)
+queue stats: current size 1000000; attempts: (24286190 23286190 1000000); counts (24286190 23286190 1000000)
+queue stats: current size 999978; attempts: (26678390 25678412 999978); counts (26678390 25678412 999978)
+queue stats: current size 999993; attempts: (29154345 28154352 999993); counts (29154345 28154352 999993)
+>>> TIMEOUT: program was terminated after 15s
+------------------------------------------------
+
+------------------------------------------------
+ TEST CONFIG:
+   QUEUE_SIZE      = 5000000
+   READER_CPU      = 0
+   WRITER_CPU      = 1
+   USE_SCHED_YIELD = 0
+   TIME_LIMIT      = 15s
+
+main [44171 44170 44171]
+config: queue_size=5000000, reader_cpu=0, writer_cpu=1, use_sched_yield=0
+qmonitor: [44171 44170 44172]
+queue stats: current size 0; attempts: (0 0 0); counts (0 0 0)
+reader [44171 44170 44173]
+writer [44171 44170 44174]
+set_cpu: set cpu 0
+set_cpu: set cpu 1
+queue stats: current size 1360635; attempts: (2722746 1362111 1360635); counts (2722746 1362111 1360635)
+queue stats: current size 2786612; attempts: (5567326 2780714 2786612); counts (5567326 2780714 2786612)
+queue stats: current size 4187411; attempts: (8364895 4177484 4187411); counts (8364895 4177484 4187411)
+queue stats: current size 4999995; attempts: (10982190 5982195 4999995); counts (10982190 5982195 4999995)
+queue stats: current size 4999993; attempts: (13302355 8302362 4999993); counts (13302355 8302362 4999993)
+queue stats: current size 4999997; attempts: (15548784 10548787 4999997); counts (15548784 10548787 4999997)
+queue stats: current size 4999974; attempts: (17909454 12909480 4999974); counts (17909454 12909480 4999974)
+queue stats: current size 4999986; attempts: (20266974 15266988 4999986); counts (20266974 15266988 4999986)
+queue stats: current size 4999987; attempts: (22341826 17341839 4999987); counts (22341826 17341839 4999987)
+queue stats: current size 4999985; attempts: (24549549 19549564 4999985); counts (24549549 19549564 4999985)
+queue stats: current size 4999995; attempts: (26837355 21837360 4999995); counts (26837355 21837360 4999995)
+queue stats: current size 4999999; attempts: (29190328 24190329 4999999); counts (29190328 24190329 4999999)
+queue stats: current size 5000000; attempts: (31350290 26350290 5000000); counts (31350290 26350290 5000000)
+queue stats: current size 4999973; attempts: (33546523 28546550 4999973); counts (33546523 28546550 4999973)
+>>> TIMEOUT: program was terminated after 15s
+------------------------------------------------
+
+------------------------------------------------
+ TEST CONFIG:
+   QUEUE_SIZE      = 5000000
+   READER_CPU      = 0
+   WRITER_CPU      = 1
+   USE_SCHED_YIELD = 1
+   TIME_LIMIT      = 15s
+
+main [44271 44270 44271]
+config: queue_size=5000000, reader_cpu=0, writer_cpu=1, use_sched_yield=1
+qmonitor: [44271 44270 44272]
+queue stats: current size 0; attempts: (0 0 0); counts (0 0 0)
+reader [44271 44270 44273]
+writer [44271 44270 44274]
+set_cpu: set cpu 0
+set_cpu: set cpu 1
+queue stats: current size 1384047; attempts: (2764523 1380476 1384047); counts (2764523 1380476 1384047)
+queue stats: current size 2749581; attempts: (5501895 2752314 2749581); counts (5501895 2752314 2749581)
+queue stats: current size 4060079; attempts: (8139636 4079557 4060079); counts (8139636 4079557 4060079)
+queue stats: current size 4999940; attempts: (10807435 5807495 4999940); counts (10807435 5807495 4999940)
+queue stats: current size 4999991; attempts: (13139102 8139111 4999991); counts (13139102 8139111 4999991)
+queue stats: current size 4999999; attempts: (15515572 10515573 4999999); counts (15515572 10515573 4999999)
+queue stats: current size 5000000; attempts: (17831935 12831935 5000000); counts (17831935 12831935 5000000)
+queue stats: current size 4999989; attempts: (20181839 15181850 4999989); counts (20181839 15181850 4999989)
+queue stats: current size 4999993; attempts: (22580354 17580361 4999993); counts (22580354 17580361 4999993)
+queue stats: current size 4999999; attempts: (24963063 19963064 4999999); counts (24963063 19963064 4999999)
+queue stats: current size 4999990; attempts: (27297716 22297726 4999990); counts (27297716 22297726 4999990)
+queue stats: current size 4999981; attempts: (29707960 24707979 4999981); counts (29707960 24707979 4999981)
+queue stats: current size 4999980; attempts: (32147795 27147815 4999980); counts (32147795 27147815 4999980)
+queue stats: current size 4999795; attempts: (34572052 29572257 4999795); counts (34572052 29572257 4999795)
+>>> TIMEOUT: program was terminated after 15s
+------------------------------------------------
+
+------------------------------------------------
+ TEST CONFIG:
+   QUEUE_SIZE      = 5000000
+   READER_CPU      = 1
+   WRITER_CPU      = 0
+   USE_SCHED_YIELD = 0
+   TIME_LIMIT      = 15s
+
+main [44375 44374 44375]
+config: queue_size=5000000, reader_cpu=1, writer_cpu=0, use_sched_yield=0
+qmonitor: [44375 44374 44376]
+queue stats: current size 0; attempts: (0 0 0); counts (0 0 0)
+reader [44375 44374 44377]
+writer [44375 44374 44378]
+set_cpu: set cpu 0
+set_cpu: set cpu 1
+queue stats: current size 1455551; attempts: (2828910 1373359 1455551); counts (2828910 1373359 1455551)
+queue stats: current size 2875830; attempts: (5574806 2698976 2875830); counts (5574806 2698976 2875830)
+queue stats: current size 4314954; attempts: (8388442 4073488 4314954); counts (8388442 4073488 4314954)
+queue stats: current size 4999999; attempts: (10981536 5981537 4999999); counts (10981536 5981537 4999999)
+queue stats: current size 5000000; attempts: (13343753 8343753 5000000); counts (13343753 8343753 5000000)
+queue stats: current size 4999985; attempts: (15750916 10750931 4999985); counts (15750916 10750931 4999985)
+queue stats: current size 4999999; attempts: (18166501 13166502 4999999); counts (18166501 13166502 4999999)
+queue stats: current size 4999999; attempts: (20592299 15592300 4999999); counts (20592299 15592300 4999999)
+queue stats: current size 4999990; attempts: (22988446 17988456 4999990); counts (22988446 17988456 4999990)
+queue stats: current size 4999999; attempts: (25399650 20399651 4999999); counts (25399650 20399651 4999999)
+queue stats: current size 4999989; attempts: (27857312 22857323 4999989); counts (27857312 22857323 4999989)
+queue stats: current size 4999978; attempts: (30240374 25240396 4999978); counts (30240374 25240396 4999978)
+queue stats: current size 4999997; attempts: (32684325 27684328 4999997); counts (32684325 27684328 4999997)
+queue stats: current size 4999912; attempts: (35111845 30111933 4999912); counts (35111845 30111933 4999912)
+>>> TIMEOUT: program was terminated after 15s
+------------------------------------------------
+
+------------------------------------------------
+ TEST CONFIG:
+   QUEUE_SIZE      = 5000000
+   READER_CPU      = 1
+   WRITER_CPU      = 0
+   USE_SCHED_YIELD = 1
+   TIME_LIMIT      = 15s
+
+main [44482 44481 44482]
+config: queue_size=5000000, reader_cpu=1, writer_cpu=0, use_sched_yield=1
+qmonitor: [44482 44481 44483]
+queue stats: current size 0; attempts: (0 0 0); counts (0 0 0)
+reader [44482 44481 44484]
+writer [44482 44481 44485]
+set_cpu: set cpu 1
+set_cpu: set cpu 0
+queue stats: current size 1475345; attempts: (2724060 1248715 1475345); counts (2724060 1248715 1475345)
+queue stats: current size 2924463; attempts: (5419048 2494585 2924463); counts (5419048 2494585 2924463)
+queue stats: current size 4357379; attempts: (8095693 3738314 4357379); counts (8095693 3738314 4357379)
+queue stats: current size 4999991; attempts: (10593003 5593012 4999991); counts (10593003 5593012 4999991)
+queue stats: current size 4999997; attempts: (13016272 8016275 4999997); counts (13016272 8016275 4999997)
+queue stats: current size 4999999; attempts: (15424633 10424634 4999999); counts (15424633 10424634 4999999)
+queue stats: current size 4999989; attempts: (17902304 12902315 4999989); counts (17902304 12902315 4999989)
+queue stats: current size 4999977; attempts: (20366639 15366662 4999977); counts (20366639 15366662 4999977)
+queue stats: current size 4999996; attempts: (22848026 17848030 4999996); counts (22848026 17848030 4999996)
+queue stats: current size 5000000; attempts: (25328071 20328071 5000000); counts (25328071 20328071 5000000)
+queue stats: current size 4999989; attempts: (27799041 22799052 4999989); counts (27799041 22799052 4999989)
+queue stats: current size 5000000; attempts: (30284723 25284723 5000000); counts (30284723 25284723 5000000)
+queue stats: current size 4999987; attempts: (32784185 27784198 4999987); counts (32784185 27784198 4999987)
+queue stats: current size 4999939; attempts: (35233870 30233931 4999939); counts (35233870 30233931 4999939)
+>>> TIMEOUT: program was terminated after 15s
+------------------------------------------------
+
+=== ALL TESTS COMPLETED ===

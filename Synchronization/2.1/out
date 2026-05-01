@@ -1,0 +1,346 @@
+=== STARTING AUTOMATED TEST RUNS ===
+
+------------------------------------------------
+ TEST CONFIG:
+   QUEUE_SIZE      = 1000
+   READER_CPU      = 0
+   WRITER_CPU      = 1
+   USE_SCHED_YIELD = 0
+   TIME_LIMIT      = 15s
+
+main [31258 31257 31258]
+qmonitor: [31258 31257 31259]
+queue stats: current size 0; attempts: (0 0 0); counts (0 0 0)
+reader [31258 31257 31260]
+writer [31258 31257 31261]
+set_cpu: set cpu 1
+set_cpu: set cpu 1
+queue stats: current size 5; attempts: (79613358 95003344 -15389986); counts (8405 8400 5)
+queue stats: current size 100; attempts: (163375207 193874117 -30498910); counts (16900 16800 100)
+queue stats: current size 100; attempts: (242286005 286404735 -44118730); counts (25600 25500 100)
+queue stats: current size 24; attempts: (326686647 386022379 -59335732); counts (34324 34300 24)
+queue stats: current size 0; attempts: (410998436 486984523 -75986087); counts (43200 43200 0)
+queue stats: current size 0; attempts: (499243813 587213606 -87969793); counts (52101 52101 0)
+queue stats: current size 85; attempts: (584048776 687897815 -103849039); counts (60801 60716 85)
+queue stats: current size 6; attempts: (666991438 787099969 -120108531); counts (69206 69201 5)
+queue stats: current size 100; attempts: (746510298 881056298 -134546000); counts (77701 77601 100)
+queue stats: current size 100; attempts: (833853468 982356594 -148503126); counts (86401 86301 100)
+queue stats: current size 100; attempts: (922011709 1086870023 -164858314); counts (95201 95101 100)
+queue stats: current size 0; attempts: (1048843896 1235557957 -186714061); counts (109701 109701 0)
+queue stats: current size 100; attempts: (1130269603 1332023514 -201753911); counts (116701 116601 100)
+timeout: the monitored command dumped core
+./start: line 30: 31257 Segmentation fault         timeout "${RUN_TIME}" $PROGRAM "$size" "$reader" "$writer" "$y"
+>>> PROGRAM EXITED WITH CODE 139
+------------------------------------------------
+
+------------------------------------------------
+ TEST CONFIG:
+   QUEUE_SIZE      = 1000
+   READER_CPU      = 0
+   WRITER_CPU      = 1
+   USE_SCHED_YIELD = 1
+   TIME_LIMIT      = 15s
+
+main [31544 31543 31544]
+qmonitor: [31544 31543 31545]
+queue stats: current size 0; attempts: (0 0 0); counts (0 0 0)
+writer [31544 31543 31547]
+set_cpu: set cpu 1
+reader [31544 31543 31546]
+set_cpu: set cpu 1
+timeout: the monitored command dumped core
+./start: line 30: 31543 Segmentation fault         timeout "${RUN_TIME}" $PROGRAM "$size" "$reader" "$writer" "$y"
+>>> PROGRAM EXITED WITH CODE 139
+------------------------------------------------
+
+------------------------------------------------
+ TEST CONFIG:
+   QUEUE_SIZE      = 1000
+   READER_CPU      = 1
+   WRITER_CPU      = 0
+   USE_SCHED_YIELD = 0
+   TIME_LIMIT      = 15s
+
+main [31571 31570 31571]
+qmonitor: [31571 31570 31572]
+queue stats: current size 0; attempts: (0 0 0); counts (0 0 0)
+reader [31571 31570 31573]
+set_cpu: set cpu 1
+writer [31571 31570 31574]
+set_cpu: set cpu 1
+ERROR: get value is 458 but expected - 457
+timeout: the monitored command dumped core
+./start: line 30: 31570 Segmentation fault         timeout "${RUN_TIME}" $PROGRAM "$size" "$reader" "$writer" "$y"
+>>> PROGRAM EXITED WITH CODE 139
+------------------------------------------------
+
+------------------------------------------------
+ TEST CONFIG:
+   QUEUE_SIZE      = 1000
+   READER_CPU      = 1
+   WRITER_CPU      = 0
+   USE_SCHED_YIELD = 1
+   TIME_LIMIT      = 15s
+
+main [31595 31594 31595]
+qmonitor: [31595 31594 31596]
+queue stats: current size 0; attempts: (0 0 0); counts (0 0 0)
+writer [31595 31594 31598]
+reader [31595 31594 31597]
+set_cpu: set cpu 1
+set_cpu: set cpu 1
+timeout: the monitored command dumped core
+./start: line 30: 31594 Segmentation fault         timeout "${RUN_TIME}" $PROGRAM "$size" "$reader" "$writer" "$y"
+>>> PROGRAM EXITED WITH CODE 139
+------------------------------------------------
+
+------------------------------------------------
+ TEST CONFIG:
+   QUEUE_SIZE      = 100000
+   READER_CPU      = 0
+   WRITER_CPU      = 1
+   USE_SCHED_YIELD = 0
+   TIME_LIMIT      = 15s
+
+main [31658 31657 31658]
+qmonitor: [31658 31657 31659]
+queue stats: current size 0; attempts: (0 0 0); counts (0 0 0)
+reader [31658 31657 31660]
+set_cpu: set cpu 1
+writer [31658 31657 31661]
+set_cpu: set cpu 1
+timeout: the monitored command dumped core
+./start: line 30: 31657 Segmentation fault         timeout "${RUN_TIME}" $PROGRAM "$size" "$reader" "$writer" "$y"
+>>> PROGRAM EXITED WITH CODE 139
+------------------------------------------------
+
+------------------------------------------------
+ TEST CONFIG:
+   QUEUE_SIZE      = 100000
+   READER_CPU      = 0
+   WRITER_CPU      = 1
+   USE_SCHED_YIELD = 1
+   TIME_LIMIT      = 15s
+
+main [31672 31671 31672]
+qmonitor: [31672 31671 31673]
+queue stats: current size 0; attempts: (0 0 0); counts (0 0 0)
+reader [31672 31671 31674]
+writer [31672 31671 31675]
+set_cpu: set cpu 1
+set_cpu: set cpu 1
+timeout: the monitored command dumped core
+./start: line 30: 31671 Segmentation fault         timeout "${RUN_TIME}" $PROGRAM "$size" "$reader" "$writer" "$y"
+>>> PROGRAM EXITED WITH CODE 139
+------------------------------------------------
+
+------------------------------------------------
+ TEST CONFIG:
+   QUEUE_SIZE      = 100000
+   READER_CPU      = 1
+   WRITER_CPU      = 0
+   USE_SCHED_YIELD = 0
+   TIME_LIMIT      = 15s
+
+main [31698 31697 31698]
+qmonitor: [31698 31697 31699]
+queue stats: current size 0; attempts: (0 0 0); counts (0 0 0)
+reader [31698 31697 31700]
+writer [31698 31697 31701]
+set_cpu: set cpu 1
+set_cpu: set cpu 1
+ERROR: get value is 2158 but expected - 2157
+timeout: the monitored command dumped core
+./start: line 30: 31697 Segmentation fault         timeout "${RUN_TIME}" $PROGRAM "$size" "$reader" "$writer" "$y"
+>>> PROGRAM EXITED WITH CODE 139
+------------------------------------------------
+
+------------------------------------------------
+ TEST CONFIG:
+   QUEUE_SIZE      = 100000
+   READER_CPU      = 1
+   WRITER_CPU      = 0
+   USE_SCHED_YIELD = 1
+   TIME_LIMIT      = 15s
+
+main [31753 31751 31753]
+qmonitor: [31753 31751 31755]
+queue stats: current size 0; attempts: (0 0 0); counts (0 0 0)
+reader [31753 31751 31756]
+set_cpu: set cpu 1
+writer [31753 31751 31757]
+set_cpu: set cpu 1
+timeout: the monitored command dumped core
+./start: line 30: 31751 Segmentation fault         timeout "${RUN_TIME}" $PROGRAM "$size" "$reader" "$writer" "$y"
+>>> PROGRAM EXITED WITH CODE 139
+------------------------------------------------
+
+------------------------------------------------
+ TEST CONFIG:
+   QUEUE_SIZE      = 1000000
+   READER_CPU      = 0
+   WRITER_CPU      = 1
+   USE_SCHED_YIELD = 0
+   TIME_LIMIT      = 15s
+
+main [31793 31792 31793]
+qmonitor: [31793 31792 31794]
+queue stats: current size 0; attempts: (0 0 0); counts (0 0 0)
+reader [31793 31792 31795]
+writer [31793 31792 31796]
+set_cpu: set cpu 1
+set_cpu: set cpu 1
+timeout: the monitored command dumped core
+./start: line 30: 31792 Segmentation fault         timeout "${RUN_TIME}" $PROGRAM "$size" "$reader" "$writer" "$y"
+>>> PROGRAM EXITED WITH CODE 139
+------------------------------------------------
+
+------------------------------------------------
+ TEST CONFIG:
+   QUEUE_SIZE      = 1000000
+   READER_CPU      = 0
+   WRITER_CPU      = 1
+   USE_SCHED_YIELD = 1
+   TIME_LIMIT      = 15s
+
+main [31808 31807 31808]
+qmonitor: [31808 31807 31809]
+queue stats: current size 0; attempts: (0 0 0); counts (0 0 0)
+reader [31808 31807 31810]
+writer [31808 31807 31811]
+set_cpu: set cpu 1
+set_cpu: set cpu 1
+ERROR: get value is 807 but expected - 806
+timeout: the monitored command dumped core
+./start: line 30: 31807 Segmentation fault         timeout "${RUN_TIME}" $PROGRAM "$size" "$reader" "$writer" "$y"
+>>> PROGRAM EXITED WITH CODE 139
+------------------------------------------------
+
+------------------------------------------------
+ TEST CONFIG:
+   QUEUE_SIZE      = 1000000
+   READER_CPU      = 1
+   WRITER_CPU      = 0
+   USE_SCHED_YIELD = 0
+   TIME_LIMIT      = 15s
+
+main [31851 31850 31851]
+qmonitor: [31851 31850 31852]
+queue stats: current size 0; attempts: (0 0 0); counts (0 0 0)
+reader [31851 31850 31853]
+writer [31851 31850 31854]
+set_cpu: set cpu 1
+set_cpu: set cpu 1
+timeout: the monitored command dumped core
+./start: line 30: 31850 Segmentation fault         timeout "${RUN_TIME}" $PROGRAM "$size" "$reader" "$writer" "$y"
+>>> PROGRAM EXITED WITH CODE 139
+------------------------------------------------
+
+------------------------------------------------
+ TEST CONFIG:
+   QUEUE_SIZE      = 1000000
+   READER_CPU      = 1
+   WRITER_CPU      = 0
+   USE_SCHED_YIELD = 1
+   TIME_LIMIT      = 15s
+
+main [31902 31901 31902]
+qmonitor: [31902 31901 31903]
+queue stats: current size 0; attempts: (0 0 0); counts (0 0 0)
+reader [31902 31901 31904]
+writer [31902 31901 31905]
+set_cpu: set cpu 1
+set_cpu: set cpu 1
+queue stats: current size 100; attempts: (82414668 98903220 -16488552); counts (7500 7400 100)
+queue stats: current size 100; attempts: (174842579 207171540 -32328961); counts (15000 14900 100)
+queue stats: current size 100; attempts: (254414967 300601203 -46186236); counts (22535 22435 100)
+timeout: the monitored command dumped core
+./start: line 30: 31901 Segmentation fault         timeout "${RUN_TIME}" $PROGRAM "$size" "$reader" "$writer" "$y"
+>>> PROGRAM EXITED WITH CODE 139
+------------------------------------------------
+
+------------------------------------------------
+ TEST CONFIG:
+   QUEUE_SIZE      = 5000000
+   READER_CPU      = 0
+   WRITER_CPU      = 1
+   USE_SCHED_YIELD = 0
+   TIME_LIMIT      = 15s
+
+main [31985 31984 31985]
+qmonitor: [31985 31984 31986]
+queue stats: current size 0; attempts: (0 0 0); counts (0 0 0)
+writer [31985 31984 31988]
+set_cpu: set cpu 1
+reader [31985 31984 31987]
+set_cpu: set cpu 1
+queue stats: current size 100; attempts: (83423385 98238311 -14814926); counts (7576 7476 100)
+queue stats: current size 100; attempts: (163523875 192971218 -29447343); counts (15076 14976 100)
+ERROR: get value is 16783 but expected - 16782
+timeout: the monitored command dumped core
+./start: line 30: 31984 Segmentation fault         timeout "${RUN_TIME}" $PROGRAM "$size" "$reader" "$writer" "$y"
+>>> PROGRAM EXITED WITH CODE 139
+------------------------------------------------
+
+------------------------------------------------
+ TEST CONFIG:
+   QUEUE_SIZE      = 5000000
+   READER_CPU      = 0
+   WRITER_CPU      = 1
+   USE_SCHED_YIELD = 1
+   TIME_LIMIT      = 15s
+
+main [32039 32038 32039]
+qmonitor: [32039 32038 32040]
+queue stats: current size 0; attempts: (0 0 0); counts (0 0 0)
+reader [32039 32038 32041]
+writer [32039 32038 32042]
+set_cpu: set cpu 1
+set_cpu: set cpu 1
+timeout: the monitored command dumped core
+./start: line 30: 32038 Segmentation fault         timeout "${RUN_TIME}" $PROGRAM "$size" "$reader" "$writer" "$y"
+>>> PROGRAM EXITED WITH CODE 139
+------------------------------------------------
+
+------------------------------------------------
+ TEST CONFIG:
+   QUEUE_SIZE      = 5000000
+   READER_CPU      = 1
+   WRITER_CPU      = 0
+   USE_SCHED_YIELD = 0
+   TIME_LIMIT      = 15s
+
+main [32089 32088 32089]
+qmonitor: [32089 32088 32090]
+queue stats: current size 0; attempts: (0 0 0); counts (0 0 0)
+reader [32089 32088 32091]
+writer [32089 32088 32092]
+set_cpu: set cpu 1
+set_cpu: set cpu 1
+ERROR: get value is 376 but expected - 375
+timeout: the monitored command dumped core
+./start: line 30: 32088 Segmentation fault         timeout "${RUN_TIME}" $PROGRAM "$size" "$reader" "$writer" "$y"
+>>> PROGRAM EXITED WITH CODE 139
+------------------------------------------------
+
+------------------------------------------------
+ TEST CONFIG:
+   QUEUE_SIZE      = 5000000
+   READER_CPU      = 1
+   WRITER_CPU      = 0
+   USE_SCHED_YIELD = 1
+   TIME_LIMIT      = 15s
+
+main [32103 32102 32103]
+qmonitor: [32103 32102 32104]
+queue stats: current size 0; attempts: (0 0 0); counts (0 0 0)
+reader [32103 32102 32105]
+writer [32103 32102 32106]
+set_cpu: set cpu 1
+set_cpu: set cpu 1
+timeout: the monitored command dumped core
+./start: line 30: 32102 Segmentation fault         timeout "${RUN_TIME}" $PROGRAM "$size" "$reader" "$writer" "$y"
+>>> PROGRAM EXITED WITH CODE 139
+------------------------------------------------
+
+=== ALL TESTS COMPLETED ===

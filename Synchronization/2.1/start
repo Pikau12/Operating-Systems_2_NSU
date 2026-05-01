@@ -1,0 +1,57 @@
+#!/usr/bin/env bash
+---
+
+PROGRAM=./a.out
+RUN_TIME=15   # время в секундах для каждого теста
+
+if [[ ! -f "$PROGRAM" ]]; then
+    echo "ERROR: $PROGRAM not found. Compile first!"
+    exit 1
+fi
+
+# Наборы тестовых значений
+QUEUE_SIZES=("1000" "100000" "1000000" "5000000")
+READER_CPUS=("0" "1")
+WRITER_CPUS=("1" "0")
+YIELDS=("0" "1")
+
+echo "=== STARTING AUTOMATED TEST RUNS ==="
+echo
+
+for size in "${QUEUE_SIZES[@]}"; do
+    for i in "${!READER_CPUS[@]}"; do
+        reader="${READER_CPUS[$i]}"
+        writer="${WRITER_CPUS[$i]}"
+
+        for y in "${YIELDS[@]}"; do
+
+            echo "------------------------------------------------"
+            echo " TEST CONFIG:"
+            echo "   QUEUE_SIZE      = $size"
+            echo "   READER_CPU      = $reader"
+            echo "   WRITER_CPU      = $writer"
+            echo "   USE_SCHED_YIELD = $y"
+            echo "   TIME_LIMIT      = ${RUN_TIME}s"
+            echo
+
+            # главный запуск с ограничением времени
+            timeout "${RUN_TIME}" $PROGRAM "$size" "$reader" "$writer" "$y"
+
+            exit_code=$?
+
+            # интерпретация результата timeout
+            if [[ $exit_code -eq 124 ]]; then
+                echo ">>> TIMEOUT: program was terminated after ${RUN_TIME}s"
+            else
+                echo ">>> PROGRAM EXITED WITH CODE $exit_code"
+            fi
+
+            echo "------------------------------------------------"
+            echo
+
+            sleep 1
+        done
+    done
+done
+
+echo "=== ALL TESTS COMPLETED ==="

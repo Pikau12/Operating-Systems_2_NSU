@@ -1,0 +1,21 @@
+=== STARTING AUTOMATED TEST RUNS ===
+
+------------------------------------------------
+ TEST CONFIG:
+   QUEUE_SIZE      = 1000
+   READER_CPU      = 0
+   WRITER_CPU      = 1
+   USE_SCHED_YIELD = 0
+   TIME_LIMIT      = 15s
+
+>>> TIMEOUT: program was terminated after 15s
+------------------------------------------------
+
+------------------------------------------------
+ TEST CONFIG:
+   QUEUE_SIZE      = 1000
+   READER_CPU      = 0
+   WRITER_CPU      = 1
+   USE_SCHED_YIELD = 1
+   TIME_LIMIT      = 15s
+

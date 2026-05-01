@@ -1,0 +1,53 @@
+# HELP-файл (на всякий случай)
+HELP.md
+
+### Общие игнорируемые артефакты операционных систем / редакторов ###
+*.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+*~
+*.swp
+*.tmp
+
+### Maven ###
+target/
+
+### Gradle ###
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+# Обычно не нужно игнорировать build/ внутри src, если там не генерируются артефакты:
+# !**/src/main/**/build/
+# !**/src/test/**/build/
+
+### STS / Eclipse ###
+.apt_generated/
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache/
+bin/
+# !**/src/main/**/bin/
+# !**/src/test/**/bin/
+
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+# !**/src/main/**/out/
+# !**/src/test/**/out/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/

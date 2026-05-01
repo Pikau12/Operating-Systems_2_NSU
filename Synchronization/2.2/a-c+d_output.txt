@@ -1,0 +1,1 @@
+ERROR: ./a.out not found. Compile first!

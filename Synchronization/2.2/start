@@ -1,0 +1,23 @@
+#!/bin/bash
+
+for dir in */; do
+    dirname="${dir%/}"
+
+    echo "==> Работаю с директорией: $dirname"
+
+    start_script="${dir}start"
+
+    if [[ -f "$start_script" && -x "$start_script" ]]; then
+        echo "Запуск $start_script ..."
+
+        (
+            cd "$dir" || exit 1
+            ./start
+        ) 
+        echo "Вывод сохранён в ${dirname}_output.txt"
+        echo
+    else
+        echo "⚠ В директории $dirname нет исполняемого start"
+        echo
+    fi
+done
